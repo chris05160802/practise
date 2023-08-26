@@ -284,3 +284,40 @@ form{
 .mode .right-panel{
     pointer-events: all;
 }
+
+@media screen and (max-width: 768px){
+    body{
+        height: 900px;
+    }
+    
+    .container{
+        height: 100%;
+    }
+
+    .container::before{
+    transform: translateX(50%) translateY(30%);
+    } 
+
+    .signnip-signup{
+        width: 100%;
+        top: 30%;
+        transform: translate(-75%, -50%);
+    }
+
+    .panel{
+        transform: translate(55%, 40%);
+    }
+
+    .mode .sign-up-form{
+        opacity: 1;
+        z-index: 2;
+        transform: translate(0%);
+    }
+
+    .right-panel{
+        transform: translate(-55%, 40%);
+    }
+}
+
+
+

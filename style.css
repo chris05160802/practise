@@ -32,9 +32,10 @@ h2{
     text-align: center;
 }
 
-.one-1{
+.one-1,
+.one-2{
     border: 1px solid gray;
-    width: 200px;
+    width: 250px;
     padding: 10px;
     display: flex;
     flex-direction: column;
