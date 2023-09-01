@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 668px;
+}
+
+.section{
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards{
+    padding: 48px 40px 36px;
+    max-width: 448px;
+    min-height: 500px;
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+}
+
+.form{
+    padding-top: 16px;
+}
+
+.input-location{
+    position: relative;
+}
+
+.input{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    color: #6C757D;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 16px 12px;
+}
+
+.input-location label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    padding: 8px;
+    transition: .3s;
+    color: #6C757D;
+}
+
+.input-location .input:focus,
+.input-location .input:valid{
+    border: 2px solid #0D6EFD;
+}
+
+.input-location .input:focus ~ label,
+.input-location .input:valid ~ label{
+    top: -15px;
+    color: #0D6EFD;
+    background: #fff;
+    font-size: 13px;
+    padding: 4px;
+}
+
+.text p{
+    font-size: 15px;
+}
+
+.other .input-group button::after{
+    display: none;
+}
+
+.other .input-group .btn:hover{
+    background: #000;
+}
+
+.submit{
+    color: #fff;
+    background: #0D6EFD;
+    border: 1px solid #0D6EFD;
+    padding: 4px 16px;
+    border-radius: 5px;
+}
+
+footer{
+    width: 448px;
+}
+
+.active::after{
+    transform: rotate(180deg);
+}
+
+.dropdown-menu{
+    height: 150px;
+}
+
+.footer .lauguage .dropup ul li{
+    transition: .3s;
+}
+
+.footer .lauguage .dropup ul li:hover{
+    background: #D0D0D0;
+}
+
+.last{
+    list-style: none;
+}
+
+.illustrate ul li a:nth-child(1){
+    margin: 0 16px;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        height: 850px;
+    }
+    
+    .cards{
+        border: none;
+    }
+
+    .illustrate ul li a:nth-child(1){
+        margin-left: 14px;
+    }
+}
+
+@media screen and (max-width: 448px){
+    footer{
+        width: 100%;
+    }
+    
+}
