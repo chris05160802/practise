@@ -150,22 +150,64 @@ section .login .input form .input-field input:valid ~ label{
     left: 12px;
 }
 
-section .login .input form .input-field .password-icon{
+section .login .input form .input-field .password-icon .open,
+section .login .input form .input-field .password-icon .close{
     width: 26px;
     height: 26px;
     position: absolute;
     top: 8px;
     right: 12px;
     padding: 2px;
+    transition: .1s;
 }
 
-section .login .input form .input-field .password-icon:hover{
+section .login .input form .input-field .password-icon .close{
+    display: none;
+}
+
+section .login .input form .input-field .password-icon .open:hover,
+section .login .input form .input-field .password-icon .close:hover{
     width: 26px;
     height: 26px;
     border: 1px solid #D0D0D0;
     border-radius: 50%;
     background: #D0D0D0;
 }
+
+/* pure css password btn */
+section .login .input form .input-field .password-icon .checkbox{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    padding: 2px;
+    transition: .1s;
+}
+
+section .login .input form .input-field .password-icon .checkbox{
+    z-index: 2;
+    opacity: 0;
+}
+
+section .login .input form .input-field .password-icon .checkbox:checked ~ .open{
+    display: none;
+}
+
+section .login .input form .input-field .password-icon .checkbox:checked ~ .close{
+    display: block;
+}
+/* pure css password btn */
+
+/* JavaScript password btn */
+/* section .login .input form .input-field .active .open{
+    display: none;
+}
+
+section .login .input form .input-field .active .close{
+    display: block;
+} */
+/* JavaScript password btn */
 
 section .login .input form .forgot{
     margin-bottom: 24px;
