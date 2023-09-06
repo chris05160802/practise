@@ -246,10 +246,36 @@ section .sign-up .input form .input-field .limit ul .branch{
     margin-left: 20px;
 }
 
-section .sign-up .input form .input-field .password:focus ~ .limit,
-section .sign-up .input form .input-field .password:valid ~ .limit{
+section .sign-up .input form .input-field .password:focus ~ .limit{
     display: block;
 }
+
+section .sign-up .input form .input-field .error{
+    text-align: left;
+    margin: 4px 20px;
+    display: none;
+}
+
+section .sign-up .input form .input-field .error p{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(227, 117, 125);
+}
+
+section .sign-up .input form .error-ps .error{
+    display: block;
+}
+
+section .sign-up .input form .error-ps label{
+    color: rgb(227, 117, 125);
+}
+
+section .sign-up .input form .error-ps input:hover,
+section .sign-up .input form .error-ps input:focus{
+    border: 1px solid rgb(227, 117, 125);
+    outline: none;
+}
+
 /* regex css */
 .length,
 .liThreeOfFour{

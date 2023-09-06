@@ -52,3 +52,14 @@ function validatePassword() {
         liThreeOfFour.className = "liThreeOfFour";
     }
 }
+
+document.getElementById('myForm').addEventListener('submit', function (event) {
+    var passwordInput = document.getElementById('password');
+    var input_field = document.getElementById('input-field');
+    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%^&*]).{8,}$/;
+  
+    if (!regex.test(passwordInput.value)) {
+        event.preventDefault();
+        input_field.classList.add('error-ps');
+    }
+  });
