@@ -36,11 +36,14 @@
             </div>
             <div class="input">
                 <form action="" id="myForm" >
-                    <div class="input-field">
+                    <div class="input-field" id="input-field-email">
                         <input type="text" name="email" id="email" required>
                         <label for="email">Email*</label>
+                        <div class="error">
+                            <p>Invalid Email</p>
+                        </div>
                     </div>
-                    <div class="input-field" id="input-field">
+                    <div class="input-field" id="input-field-password">
                         <input type="password" name="password" id="password" class="password" onkeyup="validatePassword()" required>
                         <label for="password">Password*</label>
                         <div class="password-icon" id="password-icon">

@@ -55,11 +55,19 @@ function validatePassword() {
 
 document.getElementById('myForm').addEventListener('submit', function (event) {
     var passwordInput = document.getElementById('password');
-    var input_field = document.getElementById('input-field');
-    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%^&*]).{8,}$/;
-  
-    if (!regex.test(passwordInput.value)) {
+    var email = document.getElementById('email');
+    var input_field_ps = document.getElementById('input-field-password');
+    var input_field_em = document.getElementById('input-field-email')
+    var password_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%^&*]).{8,}$/;
+    var email_regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
+    if (!password_regex.test(passwordInput.value)) {
         event.preventDefault();
-        input_field.classList.add('error-ps');
+        input_field_ps.classList.add('error-input');
     }
-  });
+
+    if (!email_regex.test(email.value)) {
+        event.preventDefault();
+        input_field_em.classList.add('error-input');
+    }
+});

@@ -252,7 +252,7 @@ section .sign-up .input form .input-field .password:focus ~ .limit{
 
 section .sign-up .input form .input-field .error{
     text-align: left;
-    margin: 4px 20px;
+    margin: 4px 16px;
     display: none;
 }
 
@@ -262,16 +262,17 @@ section .sign-up .input form .input-field .error p{
     color: rgb(227, 117, 125);
 }
 
-section .sign-up .input form .error-ps .error{
+section .sign-up .input form .error-input .error{
     display: block;
 }
 
-section .sign-up .input form .error-ps label{
+section .sign-up .input form .error-input label{
     color: rgb(227, 117, 125);
 }
 
-section .sign-up .input form .error-ps input:hover,
-section .sign-up .input form .error-ps input:focus{
+section .sign-up .input form .error-input input:hover,
+section .sign-up .input form .error-input input:focus,
+section .sign-up .input form .error-input input:valid{
     border: 1px solid rgb(227, 117, 125);
     outline: none;
 }
