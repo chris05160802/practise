@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Glassnode Studio - On-Chain Market Intelligence</title>
+</head>
+<body id="body">
+    <div class="navbar" id="navbar">
+        <nav class="nav">
+            <div class="logo">
+                <img src="https://studio.glassnode.com/images/glassnode-studio.svg" alt="">
+            </div>
+            <div class="all">
+                <div class="function" id="function">
+                    <div>
+                        <div class="left">
+                            <a href="#">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <div class="search" id="search">
+                            <span class="search-icon">
+                                <svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="14px" height="40px" fill="currentColor" aria-hidden="true">
+                                    <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path>
+                                </svg>
+                            </span>
+                            <input type="text" placeholder="Search" id="input">
+                            <span class="keyboard">/</span>
+                            <span class="clear" id="clear">Clear</span>
+                            <div class="suggestion">
+                                <small>Search suggestions</small>
+                                <div class="suggestio-link">
+                                    <a href="#">Avae</a>
+                                    <a href="#">Uniswap</a>
+                                    <a href="#">BTC</a>
+                                    <a href="#">Derivatives</a>
+                                    <a href="#">Derivatives Bitcoin</a>
+                                    <a href="#">Miner Revenue</a>
+                                </div>
+                            </div>
+                            <div class="minFast">
+                                <div class="fast">
+                                    <div class="navigate">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                        <small>Navigate</small>
+                                    </div>
+                                    <div class="close">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <small>Close</small>
+                                    </div>
+                                    <div class="open">
+                                        <i class="fa-solid fa-left-long"></i>
+                                        <small>Open</small>
+                                    </div>
+                                    <div class="openTab">
+                                        <i class="fa-solid fa-tablet"></i>
+                                        <small>Open in new tab</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#" class="home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Charts</a>
+                            </li>
+                            <li>
+                                <a href="#">Dashboards</a>
+                            </li>
+                            <li>
+                                <a href="#">Workbench</a>
+                            </li>
+                            <li>
+                                <a href="#">Alerts</a>
+                            </li>
+                            <li>
+                                <a href="#">Insights</a>
+                            </li>
+                            <li>
+                                <a href="#" class="more">
+                                    <small>More</small>
+                                    <i class="fa-solid fa-sort-down down"></i>
+                                </a>
+                                <div class="menu-collapse">
+                                    <div class="main-collapse">
+                                        <a href="#">TrandingView</a>
+                                        <a href="#">Pulses</a>
+                                        <a href="#">
+                                            <small>Academy</small>
+                                        </a>
+                                        <a href="#">
+                                            <small>Forum</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <small>Documentation</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <small>API</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <small>Catalog</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <small>Status</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                        <a href="#">
+                                            <small>Support</small>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popup">
+                        <div class="trial">
+                            <a href="#">Start free trial</a>
+                        </div>
+                        <div class="settings">
+                            <a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <div class="settings-items">
+                                <div class="items border">
+                                    <small>Dark mode</small>
+                                    <div class="box">
+                                        <input type="checkbox" id="switch">
+                                        <label for="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="items">
+                                    <small>Presenter mode</small>
+                                    <div class="box">
+                                        <input type="checkbox" id="switch2">
+                                        <label for="switch2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help">
+                            <a href="#">
+                                <i class="fa-regular fa-message"></i>
+                                <div class="help-items">
+                                    <div class="min-help">
+                                        <div class="title">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>Help us improve</p>
+                                        </div>
+                                        <small>Leave feedback about the Studio product and let us know how we can do better</small>
+                                        <a href="#" class="giveBtn">Give feedback</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="login">
+                            <a href="#">Log in</a>
+                        </div>
+                    </div>
+                    <div class="model" id="model">
+                        <div class="search-btn" id="search-btn">
+                            <a href="#">
+                                <svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="14px" height="40px" fill="currentColor" aria-hidden="true">
+                                    <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="trial">
+                            <a href="#">Start free trial</a>
+                        </div>
+                        <div class="hamburger" id="hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="model-list" id="model-list">
+                            <a class="button" href="#">
+                                <i class="fa-solid fa-x"></i>
+                                <p>Menu</p>
+                            </a>
+                            <div class="list">
+                                <a href="#">Home</a>
+                                <a href="#">Charts</a>
+                                <a href="#">Dashboards</a>
+                                <a href="#">Workbench</a>
+                                <a href="#">TradingView</a>
+                                <a href="#">Alerts</a>
+                                <a href="#">Pulses</a>
+                            </div>
+                            <div class="list">
+                                <a href="#">Pricing</a>
+                                <a href="#">Catalog</a>
+                                <a href="#">Videos</a>
+                                <a href="#">Documentation</a>
+                                <a href="#">Insights</a>
+                                <a href="#">Forum</a>
+                                <a href="#">Academy</a>
+                                <a href="#">Status</a>
+                                <a href="#">Support</a>
+                                <a href="#">Contact</a>
+                                <a href="#">
+                                    Dark Mode
+                                    <i class="fa-regular fa-moon"></i>
+                                </a>
+                                <a href="#">
+                                    Presentation Mode
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                </a>
+                                <a href="#">Give Feedback</a>
+                            </div>
+                            <div class="Remaining-btn">
+                                <div class="enter">
+                                    <a href="#">Log in</a>
+                                    <a href="#">Sign up</a>
+                                </div>
+                                <div class="start">
+                                    <a href="#">Start free trial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search-web">
+            <span class="search-icon">
+                <svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="14px" height="40px" fill="currentColor" aria-hidden="true">
+                    <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path>
+                </svg>
+            </span>
+            <div class="flex">
+                <input type="text" placeholder="Search">
+                <a href="#" id="back">
+                    <i class="fa-solid fa-x"></i>
+                </a>
+            </div>
+            <div class="suggestion">
+                <small>Search suggestions</small>
+                <div class="suggestio-link">
+                    <a href="#">Avae</a>
+                    <a href="#">Uniswap</a>
+                    <a href="#">BTC</a>
+                    <a href="#">Derivatives</a>
+                    <a href="#">Derivatives Bitcoin</a>
+                    <a href="#">Miner Revenue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container"></div>
+    <footer>
+        <div class="other">
+            <ul>
+                <li class="links">
+                    <a href="#">Home</a>
+                </li>
+                <li class="links">
+                    <a href="#">Pricing</a>
+                </li>
+                <li class="links">
+                    <a href="#">Catalog</a>
+                </li>
+                <li class="links">
+                    <a href="#">Insights</a>
+                </li>
+                <li class="links">
+                    <a href="#">Forum</a>
+                </li>
+                <li class="links">
+                    <a href="#">Affiliate</a>
+                </li>
+                <li class="links">
+                    <a href="#">Documentation</a>
+                </li>
+                <li class="links">
+                    <a href="#">Academy</a>
+                </li>
+                <li class="links">
+                    <a href="#">Status</a>
+                </li>
+                <li class="links">
+                    <a href="#">Changelog</a>
+                </li>
+                <li class="links">
+                    <a href="#">Support</a>
+                </li>
+                <li class="links">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="links">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="links">
+                    <a href="#">Privacy Notice</a>
+                </li>
+                <li class="links">
+                    <a href="#">Terms & Conditions</a>
+                </li>
+                <li class="links">
+                    <a href="#">Impressum</a>
+                </li>
+                <li class="links">
+                    <a href="#">Legal</a>
+                </li>
+            </ul>
+        </div>
+        <div class="app">
+            <a href="#">
+                <i class="fa-brands fa-twitter fa-2xs"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-telegram fa-2xs"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2xs"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-youtube fa-2xs"></i>
+            </a>
+        </div>
+        <div class="content">
+            <p>© 2023 Glassnode. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    
+</body>
+</html>

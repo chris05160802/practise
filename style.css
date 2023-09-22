@@ -10,7 +10,8 @@ body{
     flex-direction: column;
 }
 
-.one{
+.one,
+.two{
     display: flex;
     flex-direction: column;
     border: 1px solid #000;
@@ -34,7 +35,8 @@ h2{
 }
 
 .one-1,
-.one-2{
+.one-2,
+.two-1{
     border: 1px solid gray;
     width: 250px;
     padding: 10px;
